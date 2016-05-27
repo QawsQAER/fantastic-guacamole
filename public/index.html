@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Single page web app using Angularjs</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="./js/calculator.js"></script>
+</head>
+<body>
+	<div>
+		<div>
+			<nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+			</nav>
+		</div>
+		<br/>
+		<div>
+      <table class="table table-bordered">
+        <thead class="thead-inverse">
+          <td>
+            <div>Price <strong>USD</strong></div>
+          </td>
+          <td>Tax Rate</td>
+          <td>Price After Taxed <strong>USD</strong></td>
+          <td>Logistics <strong>USD</strong></td>
+          <td>Exchange Rate</td>
+          <td>Total Cost in <strong>RMB</strong></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input id="price" type="text" value="100" style="text-align:center;"></input>
+            </td>
+            <td>
+              <input id="taxRate" type="text" value="0.0875" style="text-align:center;"></input>
+            </td>
+            <td>
+              <div id="priceAfterTaxed" class="align-right" style="text-align:center;"></div>
+            </td>
+            <td>
+            <input id="logistics" type="text" value="20" style="text-align:center;"></input>
+            </td>
+            <td>
+              <input id="exchangeRate" type="text" value="6.5" style="text-align:center;"></input>
+            </td>
+            <td>
+              <div id="totalCost" style="text-align:center;"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
